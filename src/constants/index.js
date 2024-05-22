@@ -28,26 +28,7 @@ import carlosOsorio from "../assets/carlososorio.jpg";
 
 export const navLinks = [
     {
-        id: "#about",
-        title: "About me",
-    },
-    {
-        id: "#work",
-        title: "Projects",
-    },
-    {
-        id: "#contact",
-        title: "Contact",
-    },
-];
-
-export const linkTreeNavLinks = [
-    {
-        id: "/",
-        title: "Portfolio",
-    },
-    {
-        id: "",
+        id: "#connect",
         title: "Connect",
     },
     {

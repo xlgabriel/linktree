@@ -2,19 +2,18 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { navLinks, linkTreeNavLinks } from "../constants";
+import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
-const Navbar = ({ usedOnLinkTree }) => {
+const Navbar = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const navLinksToUse = usedOnLinkTree ? linkTreeNavLinks : navLinks;
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
-            if (scrollTop > 100) {
+            if (scrollTop > 50) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -46,7 +45,7 @@ const Navbar = ({ usedOnLinkTree }) => {
                 </Link>
 
                 <ul className="list-none hidden sm:flex flex-row gap-10">
-                    {navLinksToUse.map((nav) => (
+                    {navLinks.map((nav) => (
                         <li
                             key={nav.id}
                             className={`${
@@ -73,7 +72,7 @@ const Navbar = ({ usedOnLinkTree }) => {
                         } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
                     >
                         <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-                            {navLinksToUse.map((nav) => (
+                            {navLinks.map((nav) => (
                                 <li
                                     key={nav.id}
                                     className={`font-poppins font-medium cursor-pointer text-[16px] ${
