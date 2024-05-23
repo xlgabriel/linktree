@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const LinkTree = () => {
     return (
-        <div className="relative z-0 min-h-screen flex flex-col items-center">
+        <div id="connect" className="relative z-0 min-h-screen flex flex-col items-center">
             <div className="flex flex-col items-center mt-32">
                 <div className="w-32 h-32 rounded-full overflow-hidden mb-8 avatar-violet-gradient">
                     <img src={me} alt="avatar" className="w-full h-full object-cover p-1 rounded-full" />
@@ -21,14 +21,16 @@ const LinkTree = () => {
                             <strong>CV</strong>
                         </button>
                     </a>
-                    <Link
-                        to="/"
+                    <a
+                        href="https://xlgabriel.github.io/portfolio/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="mb-4 w-64 text-center green-pink-gradient p-[2px] rounded-[10px] shadow-card"
                     >
                         <button className="w-full bg-[#151131] text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out transform hover:scale-95">
                             Portfolio
                         </button>
-                    </Link>
+                    </a>
                     <a
                         href="https://www.linkedin.com/in/xlgabriel"
                         target="_blank"
@@ -52,24 +54,32 @@ const LinkTree = () => {
                     <div className="flex flex-row pt-4 gap-9">
                         <a
                             href="tel:14076692210"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="mb-4 text-center violet-gradient rounded-full shadow-card hover:scale-110 transition duration-300 ease-in-out transform"
                         >
                             <img src={phone} alt="phone" className="w-9 h-9 inline-block" />
                         </a>
                         <a
                             href="mailto:gabriel.jeannot.personal@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="mb-4 text-center violet-gradient rounded-full shadow-card hover:scale-110 transition duration-300 ease-in-out transform"
                         >
                             <img src={email} alt="email" className="w-9 h-9 inline-block" />
                         </a>
                         <a
                             href="https://youtube.com/@xlgabriel"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="mb-4 text-center violet-gradient rounded-full shadow-card hover:scale-110 transition duration-300 ease-in-out transform"
                         >
                             <img src={youtube} alt="email" className="w-9 h-9 inline-block" />
                         </a>
                         <a
                             href="https://instagram.com/jeannot.dev"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="mb-4 text-center violet-gradient rounded-full shadow-card hover:scale-110 transition duration-300 ease-in-out transform"
                         >
                             <img src={instagram} alt="email" className="w-9 h-9 inline-block" />
