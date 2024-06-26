@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { me, phone, email, youtube, instagram } from "../assets";
+import { me, phone, email, youtube } from "../assets";
 import { motion } from "framer-motion";
 
 const LinkTree = () => {
@@ -75,14 +74,6 @@ const LinkTree = () => {
                             className="mb-4 text-center violet-gradient rounded-full shadow-card hover:scale-110 transition duration-300 ease-in-out transform"
                         >
                             <img src={youtube} alt="email" className="w-9 h-9 inline-block" />
-                        </a>
-                        <a
-                            href="https://instagram.com/jeannot.dev"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mb-4 text-center violet-gradient rounded-full shadow-card hover:scale-110 transition duration-300 ease-in-out transform"
-                        >
-                            <img src={instagram} alt="email" className="w-9 h-9 inline-block" />
                         </a>
                     </div>
                 </div>
