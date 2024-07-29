@@ -52,14 +52,6 @@ const LinkTree = () => {
                     </a>
                     <div className="flex flex-row pt-4 gap-9">
                         <a
-                            href="tel:14076692210"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mb-4 text-center violet-gradient rounded-full shadow-card hover:scale-110 transition duration-300 ease-in-out transform"
-                        >
-                            <img src={phone} alt="phone" className="w-9 h-9 inline-block" />
-                        </a>
-                        <a
                             href="mailto:gabriel.jeannot.personal@gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
