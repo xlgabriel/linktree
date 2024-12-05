@@ -9,7 +9,7 @@ const LinkTree = () => {
                 <div className="w-32 h-32 rounded-full overflow-hidden mb-8 avatar-violet-gradient">
                     <motion.img
                         src={me}
-                        alt="avatar"
+                        alt="Gabriel"
                         className="w-full h-full object-cover p-1 rounded-full"
                         whileTap={{ scale: 0.9 }}
                         transition={{ duration: 0.3 }}
