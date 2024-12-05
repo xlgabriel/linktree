@@ -70,7 +70,7 @@ const Contact = () => {
             htmlContactTemplate: emailContact,
         };
 
-        fetch("https://videface-server-cars-mqx4ohbz2q-ue.a.run.app/send-contact-email", {
+        fetch("https://videface-backend-166917106706.us-east1.run.app/api/v1/cars/inspections/emails/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -101,15 +101,13 @@ const Contact = () => {
     };
 
     return (
-        <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
+        <div id="contact" className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
             <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
                 className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
             >
                 <p className={styles.sectionSubText}>Get in touch</p>
-                <h3 id="contact" className={styles.sectionHeadText}>
-                    Contact me.
-                </h3>
+                <h3 className={styles.sectionHeadText}>Contact me.</h3>
 
                 <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
                     <label className="flex flex-col">
