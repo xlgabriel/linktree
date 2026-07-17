@@ -18,7 +18,7 @@ const LinkTree = () => {
                 <h1 className="text-white text-4xl font-bold mb-6">Let's connect</h1>
                 <div className="flex flex-col items-center">
                     <a
-                        href="https://drive.google.com/file/d/1-mN7_PWG_7LK0iTuAJEwI2GMgtWKN6Bq/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1DCYYcY0EFdrchuEsNj89COkezVrdMJmc/view"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mb-4 w-64 text-center green-pink-gradient p-[2px] rounded-[10px] shadow-card"
@@ -70,6 +70,8 @@ const LinkTree = () => {
                         </a>
                         <a
                             href="https://youtube.com/@xlgabriel"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="mb-4 text-center violet-gradient rounded-full shadow-card hover:scale-110 transition duration-300 ease-in-out transform"
                         >
                             <img src={youtube} alt="email" className="w-9 h-9 inline-block" />
